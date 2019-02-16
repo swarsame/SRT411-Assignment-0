@@ -1,0 +1,129 @@
+---
+title: 'Assignment #0 - SRT411'
+author: "Said Warsame"
+date: '2019-02-15'
+output: pdf_document
+---
+
+This is my RMarkdown document which holds my answers to the ToDo excercises from Torf's and Brauer's "A (very) short introduction to R" which can be found at this link "https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf".  My Github can be found at this link "https://github.com/swarsame/SRT411-Assignment-0".
+
+####ToDo-1
+```{r}
+((2019-2018)/(2019-1994))*100
+```
+
+####ToDo-2
+```{r}
+born = 1994
+current = 2019
+schoolstart = 2018
+((current-schoolstart)/(current-born))*100
+```
+
+####ToDo-3
+```{r}
+b = c(4,5,8,11)
+sum(x=b)
+```
+
+####ToDo-4
+```{r}
+x = rnorm(100)
+plot(x)
+```
+
+####ToDo-5
+```{r}
+help(sqrt)
+```
+
+####ToDo-6
+```{r}
+source("script.R")
+```
+
+####ToDo-7
+```{r}
+P = seq(from=31, to=60, by=1)
+P
+Q = matrix(P,nrow=6,ncol=5)
+Q
+```
+
+####ToDo-8
+```{r}
+x1 = rnorm(100)
+x2 = rnorm(100)
+x3 = rnorm(100)
+t = data.frame(a = x1, b = x1+x2, c = x1+x2+x3)
+plot(t)
+sapply(t, sd)
+```
+
+####ToDo-9
+```{r}
+x1 = rnorm(100)
+x2 = rnorm(100)
+x3 = rnorm(100)
+t = data.frame(a = x1, b = x1+x2, c = x1+x2+x3)
+plot(t)
+sapply(t, sd)
+plot(t$a, type="l", ylim=range(t),lwd=3, col=rgb(1,0,0,0.3))
+lines(t$b, type="s", lwd=2,col=rgb(0.3,0.4,0.3,0.9))
+points(t$c, pch=20, cex=4,col=rgb(0,0,1,0.3))
+```
+
+####ToDo-10
+```{r}
+d = data.frame(a = c(1,2,4,8,16,32), g = c(2,4,8,16,32,64), x = c(3,6,12,24,48,96))
+write.table(d, file="tst1.txt", row.names=FALSE)
+d2 = read.table(file="tst1.txt", header=TRUE)
+write.table(d2$g*5, file="tst2.txt", row.names=FALSE)
+```
+
+####ToDo-11
+```{r}
+vec9=rnorm(100)
+mean(sqrt(vec9))
+```
+
+####ToDo-12
+```{r}
+date=strptime( c("20190215","20191205","20190614"),format="%Y%m%d")
+present=c(3,2,4)
+plot(date,present)
+```
+
+####ToDo-13
+```{r}
+vec14=seq(from=1, to=100, by=1)
+a=c()
+for(i in 1:100)
+{
+  if(vec14[i]<5)
+  {
+    a[i]=vec14[i]*5;
+  }
+  else if(vec14[i]>90)
+  {
+    a[i]=vec14[i]*10;
+  }
+  else
+  {
+    a[i]=vec14[i]*0.1;
+  }
+}
+a
+```
+
+####ToDo-14
+```{r}
+fx= function(arg1,arg2 )
+{
+  vec14[i]=arg1[i];
+  for(i in length(vec14))
+  {
+    
+  }
+}
+```
