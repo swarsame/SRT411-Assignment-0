@@ -127,3 +127,10 @@ fx= function(arg1,arg2 )
   }
 }
 ```
+
+####ToDo-15
+```{r}
+fx <- function(vec14){
+    vec14 + seq_along(vec14)
+}
+```

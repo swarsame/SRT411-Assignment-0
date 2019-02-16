@@ -1,0 +1,1 @@
+This assignment was to aid in learning R programming while doing the ToDo exercises in the document "A (very) short introduction to R".  This assignment was also used as my first project and intro on Github.
